@@ -1,0 +1,22 @@
+.registration
+    .registration__title Регистрация аккаунта
+    input.registration__input-name(type='text' value='Имя') 
+    input.registration__input-surname(type='text' value='Фамилия')
+    .registration__radio-male
+        input.registration__radio(type='radio' name='sex' id='sex' value='1' checked)
+        label(for='sex')
+    input.registration__input-female(type='radio' name='sex')
+    .registration__birthday-title Дата рождения
+    input(type='text' name='birthday' value='ДД.ММ.ГГГГ' class='registration__birthday')
+    .registration__account-info-title Данные для входа в сервис
+    input.registration__email(type='text' value='Email')
+    input.registration__password(type='password' value='Пароль')
+    .registration__switch-button 
+    .registration__switch-button-text Получать спецпредложения
+    .registration__button 
+        .registration__button-text-in перейти к оплате
+        .registration__arrow-forward arrow_forward
+    .registration__are-you-have-account Уже есть аккаунт на Toxin
+    .registration__are-you-have-account-button
+        .registration__are-you-have-account-button-text-in войти
+

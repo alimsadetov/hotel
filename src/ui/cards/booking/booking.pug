@@ -1,30 +1,36 @@
-.booking 
-    .booking__no <span>№</span>888
-    .booking__type-of-room люкс
-    .booking__cost-for-day 9 990₽ <span>в сутки</span>
-    .booking__arrival-title прибытие
-    .booking__arrival 
-        .booking__arrival-date 19.08.2019
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+mixin booking()
+    .booking 
+        .booking__no <span>№</span>888
+        .booking__type-of-room люкс
+        .booking__cost-for-day 9 990₽ <span>в сутки</span>
+        .booking__arrival-title прибытие
+        input(type='text' name='arrival-date' value='19.08.2019' class='booking__arrival')
         .booking__arrival-down-arrow expand_more
-    .booking__checkout-title выезд
-    .booking__checkout 
-        .booking__checkout-date 23.08.2019
+        .booking__checkout-title выезд
+        input(type='text' name='checkout-date' value='23.08.2019' class='booking__checkout')
         .booking__checkout-down-arrow expand_more
-    .booking__guests-title гости
-    .booking__guests 
-        .booking__guests-text-in 3 гостя
-        .booking__guests-down-arrow expand_more
-    .booking__cost-calculation 9 990₽ х 4 суток
-    .booking__cost-calculation-summary 39 960₽
-    .booking__discount Сбор за услуги: скидка 2 179₽
-    .booking__discount-info-button 
-    .booking__discount-summary 0₽
-    .booking__extra-services Сбор за дополнительные услуги
-    .booking__extra-services-info-button 
-    .booking__extra-services-summary 300₽
-    .booking__summary Итого
-    .booking__summary-line 
-    .booking__summary-cost 38 081₽
-    .booking__button 
-        .booking__button-text-in забронировать
-        .booking__button-forward-arrow arrow_forward
+        .booking__guests-title гости
+        .booking__guests 
+            .booking__guests-text-in 3 гостя
+            .booking__guests-down-arrow expand_more
+        .booking__cost-calculation 9 990₽ х 4 суток
+        .booking__cost-calculation-summary 39 960₽
+        .booking__discount Сбор за услуги: скидка 2 179₽
+        .booking__discount-info-button 
+        .booking__discount-summary 0₽
+        .booking__extra-services Сбор за дополнительные услуги
+        .booking__extra-services-info-button 
+        .booking__extra-services-summary 300₽
+        .booking__summary Итого
+        .booking__summary-line 
+        .booking__summary-cost 38 081₽
+        .booking__button 
+            .booking__button-text-in забронировать
+            .booking__button-forward-arrow arrow_forward
+        script
+            include calender.js
