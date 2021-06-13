@@ -1,0 +1,10 @@
+mixin text-field(value, name, subname, position)
+    .text-field(style=position)
+        .text-field__name= name
+        input(type='text' value=value).text-field__form
+        .text-field__subname= subname
+
+mixin text-field_hover(value, name, subname)
+    .text-field_hover__name= name
+    input(type='text' value=value).text-field_hover
+    .text-field_hover__subname= subname

@@ -1,0 +1,110 @@
+.text-field
+    position: absolute
+.text-field__name
+    position: absolute;
+    width: 150px;
+    height: 15px;
+
+
+    @extend %h3
+
+    text-transform: uppercase;
+
+    /* Dark 100% */
+
+    color: $dark-shade-100
+
+.text-field__form
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    top: 20px;
+    padding-left: 15px
+    padding-top: 0px
+    color: $dark-shade-25
+    @extend %body
+
+
+    background: #FFFFFF;
+    border: 1px solid $dark-shade-25
+    box-sizing: border-box;
+    border-radius: 4px;
+
+.text-field__subname
+    position: relative
+    width: 320px;
+    height: 15px;
+    left: 223,74px
+    float: right
+
+
+    @extend %body
+    font-size: 11.9px
+    text-align: right
+
+
+    text-transform: uppercase;
+
+    /* Dark 50% */
+
+    color: $dark-shade-50
+
+.text-field_hover__name
+    position: absolute;
+    width: 80px;
+    height: 15px;
+    left: 141px;
+    top: 227.44px;
+
+    @extend %h3
+
+    text-transform: uppercase;
+
+    /* Dark 100% */
+
+    color: $dark-shade-100
+
+.text-field_hover
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 141px;
+    top: 247.44px;
+
+    background: #FFFFFF;
+    /* Dark 50% */
+
+    border: 1px solid $dark-shade-50;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    padding-left: 15px
+    padding-top: 0px
+    color: $dark-shade-75
+    @extend %body
+
+.text-field_hover__subname
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    left: 364.74px;
+    top: 227px;
+
+    @extend %body
+    font-size: 11.9px
+
+
+    text-transform: uppercase;
+
+    /* Dark 50% */
+
+    color: $dark-shade-50
+
+.text-field__form:hover
+    color: $dark-shade-75
+    border: 1px solid $dark-shade-50;
+
+.text-field__form:focus
+    color: $dark-shade-75
+    border: 1px solid $dark-shade-50;
+

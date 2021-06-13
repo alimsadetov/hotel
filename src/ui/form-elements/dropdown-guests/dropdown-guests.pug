@@ -1,0 +1,22 @@
+mixin dropdown-guests(name, textin, position, dropped, number)
+    if (dropped==false)
+        .dropdown-guests(style=position)
+            .dropdown-guests__number(style='display: none')= number
+            .dropdown-guests__name= name 
+            .dropdown-guests__form
+                .dropdown-guests__expand-more expand_more 
+                .dropdown-guests__text-in= textin
+            .dropdown-guests__drop-field(style='display: none')
+                .dropdown-guests__adults-text
+                .dropdown-guests__childs-text
+                .dropdown-guests__baby-text
+    
+
+    if (dropped==true)
+        .dropdown-guests(style=position)
+            .dropdown-guests__number(style='display: none')= number
+            .dropdown-guests__name= name 
+            .dropdown-guests__form(style='border: 1px solid rgba(31, 32, 65, 0.5); border-radius: 2px;')
+                .dropdown-guests__expand-more expand_more 
+                .dropdown-guests__text-in= textin
+            .dropdown-guests__drop-field

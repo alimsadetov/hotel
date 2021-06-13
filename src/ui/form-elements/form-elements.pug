@@ -1,0 +1,10 @@
+.form-elements
+    include text-field/text-field.pug
+    +text-field('Email', 'text-field', 'default', 'top: 143px; left: 141px')
+    +text-field_hover('This is pretty awesome', 'text-field', 'Hover / Focus')
+    +text-field('ДД.ММ.ГГГГ', 'masked text field', '', 'top: 398px; left: 141px')
+
+    include dropdown-guests/dropdown-guests.pug
+    +dropdown-guests('Dropdown', 'Сколько гостей', 'top: 311.44px; left: 141px', false)
+    +dropdown-guests('Dropdown', 'Сколько гостей', 'top: 876px; left: 587px', true)
+    +dropdown-guests('Dropdown', 'Сколько гостей', 'top: 876px; left: 979px', true)
