@@ -1,0 +1,7 @@
+mixin date-dropdown(name, value, position)
+    .date-dropdown(style=position)
+        .date-dropdown__name= name
+        input(type='text' value=value).date-dropdown__form
+        .date-dropdown__expand-more expand_more
+        script
+            include date-dropdown.js

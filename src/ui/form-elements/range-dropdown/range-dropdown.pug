@@ -1,0 +1,7 @@
+mixin range-dropdown(name, value, position)
+    .range-dropdown(style=position)
+        .range-dropdown__name= name 
+        input(type='text' value=value).range-dropdown__form
+        .range-dropdown__expand-more expand_more
+        script 
+            include range-dropdown.js

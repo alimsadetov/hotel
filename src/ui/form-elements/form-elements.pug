@@ -8,3 +8,18 @@
     +dropdown-guests('Dropdown', 'Сколько гостей', 'top: 311.44px; left: 141px', false)
     +dropdown-guests('Dropdown', 'Сколько гостей', 'top: 876px; left: 587px', true)
     +dropdown-guests('Dropdown', 'Сколько гостей', 'top: 876px; left: 979px', true)
+
+    include date-dropdown/date-dropdown.pug
+    +date-dropdown('date Dropdown', '09.04.2003', 'top: 502px; left: 141px')
+    +date-dropdown('date Dropdown', '19.08.2019', 'top: 502px; left: 311px')
+
+    include range-dropdown/range-dropdown.pug
+    +range-dropdown('filter date dropdown', '19 Aug - 23 Aug', 'top: 607px; left: 141px')
+
+    include subscription-text-field/subscription-text-field.pug
+    +subscription-text-field('subscription text field', 'top: 712px; left: 141px')
+
+
+    include benefits/benefits.pug
+    +comfort('top: 1564px; left: 140px')
+    +convenience('top: 1653px; left: 140px')
